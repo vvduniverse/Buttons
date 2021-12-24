@@ -24,6 +24,23 @@ struct ContentView: View {
             .tint(.green)
             Button("Button 6", role: .destructive) {}
             .buttonStyle(.borderedProminent)
+            Button {
+                print("Button was tapped")
+            } label: {
+                Text("Tap me 7")
+                    .padding()
+                    .foregroundColor(.mint)
+                    .background(.yellow)
+            }
+            Button {
+                print("push me now")
+            } label: {
+                Image(systemName: "sun.dust")
+                    .resizable()
+                    .frame(width: 65, height: 65)
+                
+            }
+            .buttonStyle(.plain)
         }
     }
 }
